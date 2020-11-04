@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'course',
     'adminsortable2',
     'subadmin',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +150,5 @@ FIXTURE_DIRS = [os.path.join(os.getcwd(), "workspaces", "web", "dumps")]
 CORS_ORIGIN_WHITELIST = [
     "https://librelingo.app",
 ]
+
+
