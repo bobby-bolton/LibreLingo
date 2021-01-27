@@ -2,8 +2,8 @@
 
 Course:
   Language:
-    Name: French
-    IETF BCP 47: fr
+    Name: Asbakhi
+    IETF BCP 47: asb
   For speakers of:
     Name: English
     IETF BCP 47: en
@@ -12,19 +12,7 @@ Course:
     Short name: CC BY 3.0
     Link: https://creativecommons.org/licenses/by/3.0/
   Special characters:
-    - Ç
-    - é
-    - â
-    - ê
-    - î
-    - ô
-    - û
-    - à
-    - è
-    - ù
-    - ë
-    - ï
-    - ü
+    - θ
 
 Modules:
   - basics/
