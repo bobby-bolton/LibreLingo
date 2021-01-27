@@ -1,0 +1,54 @@
+Skill:
+  Id: ef0153b4-6bb2-4ce5-9729-8a0247ae8363
+  Name: Basics 1
+  Thumbnails:
+    - people1
+    - woman1
+    - man1
+
+New words:
+  - Word: araajul
+    Translation: man
+    Also accepted:
+      - male
+      - guy
+    Images:
+      - man1
+      - man2
+      - man3
+    
+  - Word: alniisa
+    Translation: woman
+    Also accepted:
+      - female
+      - lady
+      
+  - Word: xuuman
+    Translation: pomegranate
+
+Phrases:
+  - Phrase: La femme dit bonjour
+    Alternative versions:
+      - la femme dit salut
+    Translation: The woman says hello
+    Alternative translations:
+      - The woman says hi
+
+  - Phrase: L'homme dit bonjour
+    Alternative versions:
+      - L'homme dit salut
+    Translation: The man says hello
+    Alternative translations:
+      - The man says hi
+
+Mini-dictionary:
+    
+  Asbakhi:
+    - araajul: man
+    - alniisa: woman
+    - xuuman: pomegranate
+
+  English:
+    - man: araajul
+    - woman: alniisa
+    - pomegranate: xuuman
