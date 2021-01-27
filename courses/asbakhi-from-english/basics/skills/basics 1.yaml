@@ -71,6 +71,9 @@ New words:
   - Word: suy
     Translation: am
     
+  - Word: it
+    Translation: is
+    
   - Word: talahhamma
     Translation: to eat
     
@@ -81,9 +84,14 @@ New words:
     Translation: eats
 
 Phrases:
+  - Word: Jih suy
+    Translation: I am
+  
   
   - Phrase: Jih talahhammatijj
     Translation: I eat
+    
+  - Phrase: Ul-alniisam jih suy
     
   - Phrase: Ix-xuumanum jih talahhammatijj
     Translation: I eat the pomegranate
@@ -126,6 +134,7 @@ Mini-dictionary:
     - ux-xuuman: a pomegranate
     - jih: I
     - suy: am
+    - it: is
     - talahhamma: to eat
     - talahhammatijj: eat
     - talahhammatill: eats
@@ -139,6 +148,7 @@ Mini-dictionary:
     - a pomegranate: ux-xuuman
     - I: jih
     - am: suy
+    - is: it
     - to eat: talahhamma
     - eat: talahhammatijj
     - eats: talahhammatill
