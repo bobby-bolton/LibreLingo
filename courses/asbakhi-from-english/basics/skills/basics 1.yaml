@@ -7,48 +7,138 @@ Skill:
     - man1
 
 New words:
-  - Word: araajul
-    Translation: man
+  - Word: il-araajul
+    Alternative versions:
+      - il-araajulum
+    Translation: the man
     Also accepted:
-      - male
-      - guy
+      - the male
+      - the guy
+    Images:
+      - man1
+      - man2
+      - man3
+  
+  - Word: ul-araajul
+    Alternative versions:
+      - ul-araajulum
+    Translation: a man
+    Also accepted:
+      - a male
+      - a guy
     Images:
       - man1
       - man2
       - man3
     
-  - Word: alniisa
-    Translation: woman
+  - Word: il-alniisa
+    Alternative versions:
+      - il-alniisam
+    Translation: the woman
     Also accepted:
-      - female
-      - lady
+      - the female
+      - the lady
+    Images:
+      - woman1
+      - woman2
+      - woman3
       
-  - Word: xuuman
-    Translation: pomegranate
+  - Word: ul-alniisa
+    Alternative versions:
+      - ul-alniisam
+    Translation: a woman
+    Also accepted:
+      - a female
+      - a lady
+    Images:
+      - woman1
+      - woman2
+      - woman3
+      
+  - Word: ix-xuuman
+    Alternative versions:
+      - ix-xuumanum
+    Translation: the pomegranate
+
+  - Word: ux-xuuman
+    Alternative versions:
+      - ux-xuumanum
+    Translation: a pomegranate
+    
+  - Word: jih
+    Translation: I
+    
+  - Word: suy
+    Translation: am
+    
+  - Word: talahhamma
+    Translation: to eat
+    
+  - Word: talahhammatijj
+    Translation: eat
+  
+  - Word: talahhammatill
+    Translation: eats
 
 Phrases:
-  - Phrase: La femme dit bonjour
-    Alternative versions:
-      - la femme dit salut
-    Translation: The woman says hello
-    Alternative translations:
-      - The woman says hi
-
-  - Phrase: L'homme dit bonjour
-    Alternative versions:
-      - L'homme dit salut
-    Translation: The man says hello
-    Alternative translations:
-      - The man says hi
+  
+  - Phrase: Jih talahhammatijj
+    Translation: I eat
+    
+  - Phrase: Ix-xuumanum jih talahhammatijj
+    Translation: I eat the pomegranate
+    
+  - Phrase: Ux-xuumanum jih talahhammatijj
+    Translation: I eat a pomegranate
+    
+  - Phrase: Ix-xuumanum il-alniisa talahhammatill
+    Translation: The woman eats the pomegranate
+      
+  - Phrase: Ix-xuumanum ul-alniisa talahhammatill
+    Translation: A woman eats the pomegranate
+    
+  - Phrase: Ux-xuumanum ul-alniisa talahhammatill
+    Translation: A woman eats a pomegranate
+    
+  - Phrase: Ux-xuumanum il-alniisa talahhammatill
+    Translation: The woman eats a pomegranate
+    
+  - Phrase: Ix-xuumanum il-araajul talahhammatill
+    Translation: The man eats the pomegranate
+    
+  - Phrase: Ix-xuumanum ul-araajul talahhammatill
+    Translation: A man eats the pomegranate
+    
+  - Phrase: Ux-xuumanum ul-araajul talahhammatill
+    Translation: A man eats a pomegranate
+    
+  - Phrase: Ix-xuumanum il-araajul talahhammatill
+    Translation: The man eats a pomegranate
 
 Mini-dictionary:
     
   Asbakhi:
-    - araajul: man
-    - alniisa: woman
-    - xuuman: pomegranate
+    - il-araajul: the man
+    - il-alniisa: the woman
+    - ul-araajul: a man
+    - ul-alniisa: a woman
+    - ix-xuuman: the pomegranate
+    - ux-xuuman: a pomegranate
+    - jih: I
+    - suy: am
+    - talahhamma: to eat
+    - talahhammatijj: eat
+    - talahhammatill: eats
 
   English:
-    - man: araajul
-    - woman: alniisa
-    - pomegranate: xuuman
+    - the man: il-araajul
+    - the woman: il-alniisa
+    - a man: ul-araajul
+    - a woman: ul-alniisa
+    - the pomegranate: ix-xuuman
+    - a pomegranate: ux-xuuman
+    - I: jih
+    - am: suy
+    - to eat: talahhamma
+    - eat: talahhammatijj
+    - eats: talahhammatill
