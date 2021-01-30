@@ -21,7 +21,7 @@
 
 ## About LibreLingo
 
-LibreLingo's mission is to create a modern language-learning platform that is owned by the community of it's users. All software is licensed under AGPLv3, which guarantees the freedom to run, study, share, and modify the software. Course authors are encouraged to release their courses with free licenses.
+LibreLingo's mission is to create a modern language-learning platform that is owned by the community of its users. All software is licensed under AGPLv3, which guarantees the freedom to run, study, share, and modify the software. Course authors are encouraged to release their courses with free licenses.
 
  If you want to know why I built LibreLingo, [I recommend reading my article](https://dev.to/kantord/why-i-built-librelingo-280o). If you agree with LibreLingo's mission, [consider helping to build and maintain it](#become-a-contributor), and [please consider making a monetary contribution](https://github.com/sponsors/kantord). If you want to make your own course, placeholder [and don't forget to use this tool](https://www.uuidgenerator.net/version4).
 
@@ -131,7 +131,7 @@ working with LibreLingo courses.
 #### Setup
 [librelingo-tools](https://pypi.org/project/librelingo-tools/) can be installed using pip:
 
-```
+```sh
 pip install librelingo-tools
 ```
 
@@ -304,7 +304,7 @@ The mascot is designed by [@almostdesigner](https://github.com/almostdesigner).
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-48-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -374,6 +374,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ciampix"><img src="https://avatars2.githubusercontent.com/u/372887?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marco Ciampa</b></sub></a><br /><a href="https://github.com/kantord/LibreLingo/issues?q=author%3Aciampix" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://blog.dc7ia.eu"><img src="https://avatars.githubusercontent.com/u/26351852?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joshua &#124; DC7IA</b></sub></a><br /><a href="https://github.com/kantord/LibreLingo/issues?q=author%3ADC7IA" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://reyzadren.neocities.org/"><img src="https://avatars.githubusercontent.com/u/38787026?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Reyzadren</b></sub></a><br /><a href="#ideas-Reyzadren" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/saeub"><img src="https://avatars.githubusercontent.com/u/38892775?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andreas</b></sub></a><br /><a href="https://github.com/kantord/LibreLingo/commits?author=saeub" title="Documentation">📖</a></td>
   </tr>
 </table>
 
