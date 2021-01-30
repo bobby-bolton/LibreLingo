@@ -65,13 +65,23 @@ New words:
       - ux-xuumanum
     Translation: a pomegranate
     
+  - Word: ut-tamaarah
+    Alternation versions:
+      - ut-tamaarahm
+    Translation: a fruit
+    
+  - Word: it-tamaarah
+    Alternation versions:
+      - it-tamaarahm
+    Translation: the fruit
+    
   - Word: jih
     Translation: I
     
   - Word: suy
     Translation: am
     
-  - Word: it
+  - Word: itah
     Translation: is
     
   - Word: talahhamma
@@ -87,17 +97,23 @@ Phrases:
   - Word: Jih suy
     Translation: I am
   
-  
   - Phrase: Jih talahhammatijj
     Translation: I eat
     
   - Phrase: Ul-alniisam jih suy
+    Translation: I am a woman
+    
+  - Phrase: Ul-araajulum jih suy
+    Translation: I am a man
     
   - Phrase: Ix-xuumanum jih talahhammatijj
     Translation: I eat the pomegranate
     
   - Phrase: Ux-xuumanum jih talahhammatijj
     Translation: I eat a pomegranate
+    
+  - Phrase: Ut-tamaarahm ux-xuumanu itah
+    Translation: A pomegranate is a fruit
     
   - Phrase: Ix-xuumanum il-alniisa talahhammatill
     Translation: The woman eats the pomegranate
@@ -132,9 +148,11 @@ Mini-dictionary:
     - ul-alniisa: a woman
     - ix-xuuman: the pomegranate
     - ux-xuuman: a pomegranate
+    - it-tamaarah: the fruit
+    - ut-tamaarah: a fruit
     - jih: I
     - suy: am
-    - it: is
+    - itah: is
     - talahhamma: to eat
     - talahhammatijj: eat
     - talahhammatill: eats
@@ -146,9 +164,11 @@ Mini-dictionary:
     - a woman: ul-alniisa
     - the pomegranate: ix-xuuman
     - a pomegranate: ux-xuuman
+    - the fruit: it-tamaarah
+    - a fruit: ut-tamaarah
     - I: jih
     - am: suy
-    - is: it
+    - is: itah
     - to eat: talahhamma
     - eat: talahhammatijj
     - eats: talahhammatill
