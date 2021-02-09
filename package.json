@@ -9,10 +9,13 @@
     "web": "yarn workspace web",
     "stylefix": "yarn web run prettierfix && yarn web run eslintfix",
     "stylecheck": "yarn web run prettiercheck && yarn web run eslintcheck",
+    "exportAllCourses": "./scripts/exportAllYamlCourses.sh",
     "docs": "pipenv run mkdocs serve"
   },
   "workspaces": {
-    "packages": ["workspaces/*"],
+    "packages": [
+      "workspaces/*"
+    ],
     "nohoist": [
       "**/bulma",
       "**/bulma/**",
@@ -28,18 +31,21 @@
     ]
   },
   "devDependencies": {
-    "eslint": "7.18.0",
+    "eslint": "7.19.0",
     "eslint-plugin-cypress": "2.11.2",
     "eslint-plugin-jest": "24.1.3",
     "eslint-plugin-svelte3": "3.0.0",
-    "svelte": "3.32.1",
-    "svelte-preprocess": "4.6.5",
+    "svelte": "3.32.2",
+    "svelte-preprocess": "4.6.6",
     "ts-jest": "26.5.0",
     "typescript": "4.1.3"
   },
   "nyc": {
     "report-dir": "cypress-coverage",
-    "extension": [".js", ".svelte"],
+    "extension": [
+      ".js",
+      ".svelte"
+    ],
     "all": true,
     "cache": false
   },
@@ -58,6 +64,6 @@
   },
   "dependencies": {
     "source-map-loader": "2.0.0",
-    "ts-loader": "8.0.14"
+    "ts-loader": "8.0.15"
   }
 }
