@@ -26,34 +26,82 @@ def convert_language(raw_language):
     )
 
 
-def get_dictionary_items(modules):
+def get_dictionary_items_from_new_words(skill):
+    """
+    Extract new words in a skill as dictionar items
+    """
+    for word in skill.words:
+        yield word.in_source_language[0], word.in_target_language[0], False
+        yield word.in_target_language[0], word.in_source_language[0], True
+
+
+def get_dictionary_items_from_skill_mini_dictionary(skill):
+    """
+    Iterate over all dictionary items from the mini-dictionary of a skill
+    """
+    for dictionary_item in skill.dictionary:
+        word, definitions, is_in_target_language = dictionary_item
+        for definition in definitions:
+            yield word, definition, is_in_target_language
+
+
+def get_all_skills(modules):
+    """
+    Iterate over all skills in the supplied list of modules
+    """
     for module in modules:
         for skill in module.skills:
-            for word in skill.words:
-                yield word.in_source_language[0], word.in_target_language[0], False
-                yield word.in_target_language[0], word.in_source_language[0], True
+            yield skill
+
+
+def get_dictionary_items(modules):
+    """
+    Extract all dictionary items from every module in the supplied list
+    """
+    for skill in get_all_skills(modules):
+        for item in get_dictionary_items_from_new_words(skill):
+            yield item
+
+        if skill.dictionary is not None:
+            for item in get_dictionary_items_from_skill_mini_dictionary(skill):
+                yield item
 
 
 def merge_dictionary_definitions(items_generator):
+    """
+    Merges dictionary items, meaning that multiple definitions of the same word
+    are compressed into one definition that has a multiple meanings listed.
+    """
     items = collections.defaultdict(set)
-    for word, definition, reverse in items_generator:
-        items[(word, reverse)].add(
+    for word, definition, is_in_target_language in items_generator:
+        items[(word, is_in_target_language)].add(
             definition)
     return list(items.items())
 
 
 def get_merged_dictionary_items(modules):
+    """
+    Generates merged dictionary items using every skill in every module that is
+    passed in the argument.
+
+    Merging dictionary items means that multiple definitions of the same word
+    are compressed into one definition that has a multiple meanings listed.
+    """
     return merge_dictionary_definitions(get_dictionary_items(modules))
 
 
 def load_dictionary(modules):
+    """
+    Generates a dictionary using every skill in every module that is
+    passed in the argument
+    """
     items = []
     for key, definition in get_merged_dictionary_items(modules):
-        word, reverse = key
+        word, is_in_target_language = key
         items.append(DictionaryItem(
             word=word,
             definition="\n".join(sorted(definition)),
-            reverse=reverse,
+            is_in_target_language=is_in_target_language,
         ))
     return items
 
@@ -119,7 +167,24 @@ def convert_phrases(raw_phrases):
     return list(map(convert_phrase, raw_phrases))
 
 
-def load_skill(path):
+def convert_mini_dictionary(raw_mini_dictionary, course):
+    """
+    Handles loading the mini-dictionary form the YAML format
+    """
+    configurations = (
+        (course.target_language.name, True),
+        (course.source_language.name, False),
+    )
+    for language_name, is_in_target_language in configurations:
+        for item in raw_mini_dictionary[language_name]:
+            word = list(item.keys())[0]
+            raw_definition = list(item.values())[0]
+            definition = raw_definition if type(
+                raw_definition) == list else [raw_definition]
+            yield (word, tuple(definition), is_in_target_language)
+
+
+def load_skill(path, course):
     try:
         data = load_yaml(path)
         skill = data["Skill"]
@@ -161,22 +226,25 @@ def load_skill(path):
         id=skill_id,
         words=words,
         phrases=phrases,
-        image_set=skill["Thumbnails"] if "Thumbnails" in skill else []
+        image_set=skill["Thumbnails"] if "Thumbnails" in skill else [],
+        dictionary=list(convert_mini_dictionary(
+            data["Mini-dictionary"], course))
+        if "Mini-dictionary" in data else [],
     )
 
 
-def load_skills(path, skills):
+def load_skills(path, skills, course):
     """
     Load each YAML skill specified in the list
     """
     try:
-        return [load_skill(Path(path) / "skills" / skill) for skill in skills]
+        return [load_skill(Path(path) / "skills" / skill, course) for skill in skills]
     except TypeError:
         raise RuntimeError(
             'Module file "{}/module.yaml" needs to have a list of skills'.format(path))
 
 
-def load_module(path):
+def load_module(path, course):
     """
     Load a YAML module
     """
@@ -200,15 +268,15 @@ def load_module(path):
 
     return Module(
         title=title,
-        skills=load_skills(path, skills)
+        skills=load_skills(path, skills, course)
     )
 
 
-def load_modules(path, modules):
+def load_modules(path, modules, course):
     """
     Load each YAML module specifed in the list
     """
-    return [load_module(Path(path) / module) for module in modules]
+    return [load_module(Path(path) / module, course) for module in modules]
 
 
 def convert_license(raw_license):
@@ -230,13 +298,20 @@ def load_course(path):
     data = load_yaml(Path(path) / "course.yaml")
     course = data["Course"]
     raw_modules = data["Modules"]
-    modules = load_modules(path, raw_modules)
-
-    return Course(
+    dumb_course = Course(
         target_language=convert_language(course["Language"]),
         source_language=convert_language(course["For speakers of"]),
         license=convert_license(course["License"]),
-        dictionary=load_dictionary(modules),
-        modules=modules,
         special_characters=course["Special characters"],
+        dictionary=[],
+        modules=[],
+    )
+    modules = load_modules(path, raw_modules, dumb_course)
+
+    return Course(
+        **{
+            **dumb_course._asdict(),
+            "dictionary": load_dictionary(modules),
+            "modules": modules,
+        }
     )

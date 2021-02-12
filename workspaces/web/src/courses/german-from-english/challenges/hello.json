@@ -1,23 +1,23 @@
 {
-  "id": "40724768fcf9",
+  "id": "380f3001d9ea",
   "levels": 2,
   "challenges": [
     {
       "type": "options",
-      "formInTargetLanguage": "La femme dit bonjour",
+      "formInTargetLanguage": "Die Frau sagt hallo",
       "meaningInSourceLanguage": "The woman says hello",
-      "id": "6ebf41f2ce09",
+      "id": "94d531dbc9bc",
       "priority": 0,
-      "group": "921dd5d24167"
+      "group": "a85c3c4fc802"
     },
     {
       "type": "listeningExercise",
-      "answer": "La femme dit bonjour",
+      "answer": "Die Frau sagt hallo",
       "meaning": "The woman says hello",
-      "audio": "e0d059affc8ac676af5ad1fb8a9815fe877d19efa55d4298f36d03954b949b51",
-      "id": "1866c2decb63",
+      "audio": "a28b176cd2456204de44858effa8880c7242a1ee93b929e5fb0a5ffc4ab5d2b0",
+      "id": "b15f93120955",
       "priority": 1,
-      "group": "921dd5d24167"
+      "group": "a85c3c4fc802"
     },
     {
       "type": "chips",
@@ -31,54 +31,61 @@
         },
         {
           "word": "says",
-          "definition": "dit"
+          "definition": "sagt"
         },
         {
           "word": "hello",
-          "definition": "bonjour\nsalut"
+          "definition": "guten Tag\nhallo\nhi"
         }
       ],
       "chips": [
-        "La",
-        "femme",
-        "dit",
-        "bonjour"
+        "Die",
+        "Frau",
+        "sagt",
+        "hallo"
       ],
       "solutions": [
         [
-          "La",
-          "femme",
-          "dit",
-          "bonjour"
+          "Die",
+          "Frau",
+          "sagt",
+          "hallo"
         ],
         [
-          "la",
-          "femme",
-          "dit",
-          "salut"
+          "Die",
+          "Frau",
+          "sagt",
+          "hi"
+        ],
+        [
+          "Die",
+          "Frau",
+          "sagt",
+          "guten",
+          "Tag"
         ]
       ],
-      "formattedSolution": "La femme dit bonjour",
-      "id": "2e3fc4b0103a",
+      "formattedSolution": "Die Frau sagt hallo",
+      "id": "c93babf881c8",
       "priority": 2,
-      "group": "921dd5d24167"
+      "group": "a85c3c4fc802"
     },
     {
       "type": "chips",
       "translatesToSourceLanguage": true,
       "phrase": [
         {
-          "word": "La"
+          "word": "Die"
         },
         {
-          "word": "femme"
+          "word": "Frau"
         },
         {
-          "word": "dit",
+          "word": "sagt",
           "definition": "says"
         },
         {
-          "word": "bonjour",
+          "word": "hallo",
           "definition": "hello\nhi"
         }
       ],
@@ -103,26 +110,26 @@
         ]
       ],
       "formattedSolution": "The woman says hello",
-      "id": "038fe486182d",
+      "id": "73ed88b43327",
       "priority": 2,
-      "group": "921dd5d24167"
+      "group": "a85c3c4fc802"
     },
     {
       "type": "options",
-      "formInTargetLanguage": "L'homme dit bonjour",
+      "formInTargetLanguage": "Der Mann sagt hallo",
       "meaningInSourceLanguage": "The man says hello",
-      "id": "df8dc7b5cf8b",
+      "id": "a1ff58a04f46",
       "priority": 0,
-      "group": "0f389ca8a0c4"
+      "group": "92bf2f2d2a96"
     },
     {
       "type": "listeningExercise",
-      "answer": "L'homme dit bonjour",
+      "answer": "Der Mann sagt hallo",
       "meaning": "The man says hello",
-      "audio": "d20aa20ddd1cbf6386226aa9328a2439d04db13183f1d035622ef5cbb722bac7",
-      "id": "b7b8863b13ae",
+      "audio": "d9ede7f99f5d442ad3a41855b49f844c4a56b8ff6add5debc87b60d3a680393a",
+      "id": "dc09a377d04a",
       "priority": 1,
-      "group": "0f389ca8a0c4"
+      "group": "92bf2f2d2a96"
     },
     {
       "type": "chips",
@@ -136,49 +143,61 @@
         },
         {
           "word": "says",
-          "definition": "dit"
+          "definition": "sagt"
         },
         {
           "word": "hello",
-          "definition": "bonjour\nsalut"
+          "definition": "guten Tag\nhallo\nhi"
         }
       ],
       "chips": [
-        "L'homme",
-        "dit",
-        "bonjour"
+        "Der",
+        "Mann",
+        "sagt",
+        "hallo"
       ],
       "solutions": [
         [
-          "L'homme",
-          "dit",
-          "bonjour"
+          "Der",
+          "Mann",
+          "sagt",
+          "hallo"
         ],
         [
-          "L'homme",
-          "dit",
-          "salut"
+          "Der",
+          "Mann",
+          "sagt",
+          "hi"
+        ],
+        [
+          "Der",
+          "Mann",
+          "sagt",
+          "guten",
+          "Tag"
         ]
       ],
-      "formattedSolution": "L'homme dit bonjour",
-      "id": "5ebdd684bc01",
+      "formattedSolution": "Der Mann sagt hallo",
+      "id": "23fc737d6f8b",
       "priority": 2,
-      "group": "0f389ca8a0c4"
+      "group": "92bf2f2d2a96"
     },
     {
       "type": "chips",
       "translatesToSourceLanguage": true,
       "phrase": [
         {
-          "word": "L'homme",
-          "definition": "the man"
+          "word": "Der"
         },
         {
-          "word": "dit",
+          "word": "Mann"
+        },
+        {
+          "word": "sagt",
           "definition": "says"
         },
         {
-          "word": "bonjour",
+          "word": "hallo",
           "definition": "hello\nhi"
         }
       ],
@@ -203,9 +222,9 @@
         ]
       ],
       "formattedSolution": "The man says hello",
-      "id": "2d6b05be7089",
+      "id": "9b88ec09eb0d",
       "priority": 2,
-      "group": "0f389ca8a0c4"
+      "group": "92bf2f2d2a96"
     },
     {
       "type": "cards",
@@ -214,11 +233,11 @@
         "man2.jpg",
         "man3.jpg"
       ],
-      "formInTargetLanguage": "l'homme",
+      "formInTargetLanguage": "Der Mann",
       "meaningInSourceLanguage": "the man",
-      "id": "765f2efca3b5",
+      "id": "1503f5893e3d",
       "priority": 0,
-      "group": "f20e2aa89c50"
+      "group": "8371a46ddb1e"
     },
     {
       "type": "shortInput",
@@ -228,7 +247,7 @@
         "man3.jpg"
       ],
       "formInTargetLanguage": [
-        "l'homme"
+        "Der Mann"
       ],
       "phrase": [
         {
@@ -238,34 +257,34 @@
           "word": "man"
         }
       ],
-      "id": "ee2a7de8342b",
+      "id": "ca04464ffb93",
       "priority": 1,
-      "group": "f20e2aa89c50"
+      "group": "8371a46ddb1e"
     },
     {
       "type": "listeningExercise",
-      "answer": "l'homme",
+      "answer": "Der Mann",
       "meaning": "the man",
-      "audio": "9bfce1b18e137b7af51c287726c5dcc914aab05ab1847832e1bfed12adc1cd9f",
-      "id": "dcd103a2e758",
+      "audio": "64c8cdfa3dd311e3a10dd86ccb325e4f6e4c75dbb41ce960eb853a3d8cf89a01",
+      "id": "bd83b83db1e3",
       "priority": 1,
-      "group": "f20e2aa89c50"
+      "group": "8371a46ddb1e"
     },
     {
       "type": "cards",
       "pictures": null,
-      "formInTargetLanguage": "la femme",
+      "formInTargetLanguage": "Die Frau",
       "meaningInSourceLanguage": "the woman",
-      "id": "bd13dcfe4d22",
+      "id": "840d90aea650",
       "priority": 0,
-      "group": "2729f22db5bf"
+      "group": "2d6a9b3b659b"
     },
     {
       "type": "shortInput",
       "pictures": null,
       "formInTargetLanguage": [
-        "la femme",
-        "la dame"
+        "Die Frau",
+        "Die Dame"
       ],
       "phrase": [
         {
@@ -275,18 +294,18 @@
           "word": "woman"
         }
       ],
-      "id": "19a877a0955d",
+      "id": "5cd545eaebe8",
       "priority": 1,
-      "group": "2729f22db5bf"
+      "group": "2d6a9b3b659b"
     },
     {
       "type": "listeningExercise",
-      "answer": "la femme",
+      "answer": "Die Frau",
       "meaning": "the woman",
-      "audio": "cabd9d1b9cae7227bd640f6ec302ea9ce0c551e7f94d23a7ff843ced6846c7da",
-      "id": "f91de23ae173",
+      "audio": "609a9b428b8d731096abd531a6a40d22f5bf8d9155b5113185fc99286e83cae4",
+      "id": "70dd782a5072",
       "priority": 1,
-      "group": "2729f22db5bf"
+      "group": "2d6a9b3b659b"
     }
   ]
 }
